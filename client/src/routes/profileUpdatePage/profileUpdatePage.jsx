@@ -1,6 +1,11 @@
+import { useContext } from "react";
 import "./profileUpdatePage.scss";
+import { AuthContext } from "../../context/AuthContext";
 
 function ProfileUpdatePage() {
+  const { currentUser, updateUser } = useContext(AuthContext);
+
+
   return (
     <div className="profileUpdatePage">
       <div className="formContainer">
